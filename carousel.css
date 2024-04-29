@@ -1,0 +1,32 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  
+ 
+  border: 0px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 50px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 50px;
+  color: black;
+}
+.carousel-indicators {
+  opacity: 1;
+}
+
+[data-bs-theme=dark] .carousel-dark .carousel-indicators [data-bs-target], [data-bs-theme=dark] .carousel .carousel-indicators [data-bs-target], .carousel-dark .carousel-indicators [data-bs-target], .carousel .carousel-indicators [data-bs-target] {
+  background-color: var(--bs-black);
+  opacity: 1;
+}
+
+[data-bs-theme=dark] .carousel-dark [data-bs-target].active, [data-bs-theme=dark] .carousel [data-bs-target].active, .carousel-dark [data-bs-target].active, .carousel [data-bs-target].active {
+  background-color: var(--bs-blue);
+}
